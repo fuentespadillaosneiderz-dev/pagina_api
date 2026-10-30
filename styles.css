@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0b0813;
+    background-image: 
+        linear-gradient(rgba(0, 255, 204, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 204, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+    font-family: 'Share Tech Mono', monospace;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Contenedor Principal Retro con Neón Fucsia */
+.arcade-container {
+    width: 100%;
+    max-width: 950px;
+    background: rgba(13, 10, 25, 0.95);
+    border: 5px solid #ff007f;
+    box-shadow: 0 0 20px #ff007f, inset 0 0 15px #ff007f;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+}
+
+/* Badge PRESS START */
+.badge-start {
+    display: inline-block;
+    background-color: #ff007f;
+    color: #00ffff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    padding: 6px 16px;
+    border: 2px solid #00ffff;
+    box-shadow: 3px 3px 0px #00ffff;
+    margin-bottom: 20px;
+}
+
+/* Título GAME SEARCH */
+.title-arcade {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 32px;
+    color: #00f0ff;
+    text-shadow: 3px 3px 0px #ff007f, -2px -2px 0px #000;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #cccccc;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Caja de Búsqueda Verde Neón */
+.search-box {
+    border: 3px solid #00ff66;
+    box-shadow: 0 0 10px #00ff66;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.search-label {
+    color: #00ff66;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+}
+
+.input-group input {
+    flex: 1;
+    background-color: #050b14;
+    border: 2px solid #00f0ff;
+    color: #ffffff;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-family: 'Share Tech Mono', monospace;
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #6688a0;
+}
+
+.btn-buscar {
+    background-color: #00ff66;
+    color: #000000;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    padding: 12px 25px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #000;
+    transition: all 0.2s;
+}
+
+.btn-buscar:hover {
+    background-color: #00ffff;
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px #000;
+}
+
+/* Tabla Estilizada */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(5, 11, 20, 0.8);
+    border: 1px solid #00f0ff;
+}
+
+th {
+    background-color: #ff007f;
+    color: #ffffff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #00ffff;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #1a2a3a;
+    text-align: left;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Estilo para las imágenes de los personajes */
+.img-personaje {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 8px #00ffff;
+    border-radius: 4px;
+    background-color: #000000;
+    padding: 4px;
+}

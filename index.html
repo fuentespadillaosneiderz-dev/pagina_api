@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Search - Arcade Edition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="arcade-container">
+        <div class="badge-start">&gt; PRESS START</div>
+        <h1 class="title-arcade">GAME SEARCH</h1>
+        <p class="subtitle">Inserta la ficha y busca tus personajes favoritos en tiempo real</p>
+
+        <div class="search-box">
+            <span class="search-label">&gt; INSERT CHARACTER NAME:</span>
+            <div class="input-group">
+                <input type="text" id="buscador" placeholder="Ej. sonic, mario, link, pikachu...">
+                <button class="btn-buscar" id="btn-buscar">BUSCAR</button>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 120px;">Imagen</th>
+                    <th>Nombre</th>
+                    <th>Descripción / Datos</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-personajes">
+                <tr>
+                    <td colspan="3" style="text-align: center;">Escribe un nombre para buscar...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
